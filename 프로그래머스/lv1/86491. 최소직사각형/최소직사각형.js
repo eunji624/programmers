@@ -1,20 +1,17 @@
 function solution(sizes) {
+    function bigsmall(arr){
+        arr.sort((a,b)=> {return b-a});
+    }
     let frist = [];
-    let second=[];
+        second = []
     sizes.map((a)=>{
-        a.sort((a,b)=>{
-           return a-b
-        })
+        bigsmall(a)
         frist.push(a[0]);
         second.push(a[1]);
     })
-    frist.sort((a,b)=>{
-       return b-a
-    });
-    second.sort((a,b)=>{
-       return b-a
-    });
-    
+    bigsmall(frist);
+    bigsmall(second);
+
     var answer = frist[0] * second[0];
     return answer;
 }
