@@ -5,5 +5,8 @@ function solution(my_string, is_suffix) {
     // }
     // return  n.includes(is_suffix)? 1 : 0;
     
-    return my_string.substr(-is_suffix.length) === is_suffix? 1: 0
+    // return my_string.substr(-is_suffix.length) === is_suffix? 1: 0
+    
+    return my_string.endsWith(is_suffix) ? 1 : 0
+
 }
