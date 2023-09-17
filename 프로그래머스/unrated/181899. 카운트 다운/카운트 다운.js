@@ -7,10 +7,9 @@ function solution(start, end) {
     // }
     // return answer;
     var answer = [];
-    let a = start;
     do{
-        answer.push(a)
-        a--
-    }while( a>=end )
+        answer.push(start)
+        start--
+    }while( start >=end )
     return answer
 }
