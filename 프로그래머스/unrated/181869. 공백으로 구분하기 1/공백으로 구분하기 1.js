@@ -1,3 +1,3 @@
-function solution(my_string) {
-    return  my_string.split(" ");
+function solution(str){
+    return  str.split(" ");
 }
