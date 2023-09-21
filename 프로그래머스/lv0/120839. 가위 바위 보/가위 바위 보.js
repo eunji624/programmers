@@ -1,9 +1,10 @@
 function solution(rsp){
-    let a = '';
-    [...rsp].map((e)=>{
-        a+= e==='2' ?e ='0' : e==='0' ? e='5' : e='2';
-    }).join('')
-    return a
+    // let a = '';
+    // [...rsp].map((e)=>{
+    //     a+= e==='2' ?e ='0' : e==='0' ? e='5' : e='2';
+    // }).join('')
+    // return a
+    
     
     // let a = '';
     // [...rsp].map((e)=>{
@@ -11,11 +12,14 @@ function solution(rsp){
     // });
     // return a;
 
+    
     // let arr = {
     //     2 : 0,
     //     0 : 5,
     //     5 : 2
     // };
     // return  [...rsp].map((e)=> arr[e]).join('')
+    
 
+    return rsp.split("").map((v) => v==="2" ? 0 : v==="0" ? 5 : 2).join("")
 }
