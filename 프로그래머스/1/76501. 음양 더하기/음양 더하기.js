@@ -1,12 +1,12 @@
-function solution (s, ab) {
+function solution (ab, s) {
     var answer = 0;
-    
-    for(let i = 0; i < ab.length; i++){
-        if (ab[i] === true){
-            answer = answer +s[i];
+    console.log(ab)
+    for(let i = 0; i < s.length; i++){
+        if (s[i] === true){
+            answer = answer +ab[i];
         }
-        if (ab[i] === false){
-            answer = answer -s[i];
+        if (s[i] === false){
+            answer = answer -ab[i];
         }
     }
     return answer;
