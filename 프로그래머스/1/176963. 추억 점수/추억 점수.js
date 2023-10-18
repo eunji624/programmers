@@ -1,10 +1,43 @@
 function solution(name, yearning, photo) {
+    
+    // let obj = {};
+    // name.forEach((e,i)=> obj[e] = yearning[i])
+    
+//     let answer = photo.map((p)=>{
+//         let num = p.map((sp)=>{
+//             return obj[sp] ? obj[sp] : 0
+//         })
+//         let redu = num.reduce((acc, acu)=>{
+//            return acc+ acu; 
+//         },0);
+
+//     })
+//     return answer;
+    
+    // return photo.map((p) =>{
+    //     return p.map((sp) =>{
+    //         return obj[sp] ? obj[sp] : 0
+    //     }).reduce((acc, acu)=> {
+    //         return acc+ acu 
+    //     },0)
+    // })
+
+
+    // let obj = {};
+    // for(let i = 0; i < name.length; i++){
+    //     obj[name[i]] = yearning[i];
+    // }
+    // return photo.map(value => value.map(v => obj[v] ? obj[v] : 0).reduce((acc,cur) => acc + cur,0))
+
+    
+    
     let mapPhoto = photo.map((p)=>{
         let answer = [];
+        
         p.map((e)=>{
-            name.map((n)=>{
+            return name.map((n)=>{
                 return e ===n ? answer.push(e) : e
-            })
+            });
         });
         return answer
     })
