@@ -1,6 +1,6 @@
 # [level 1] 수박수박수박수박수박수? - 12922 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12922) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12922?language=javascript) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 10월 5일 9:22:4
+2023년 10월 5일 9:26:36
 
 ### 문제 설명
 
