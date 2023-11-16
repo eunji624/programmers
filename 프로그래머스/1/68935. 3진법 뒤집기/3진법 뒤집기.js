@@ -4,12 +4,13 @@ function solution(n) {
         str += n%3
         n = Math.floor(n/3)
     }
-    return parseInt(str,'3')
-    // const arr = str.split('').map((e)=> Number(e))
-    // const answer = arr.reduce((acc, cur, i) => {
-    //     const num = str.length-i-1
-    //     // console.log(num)
-    //     return cur += acc* 3^num
-    // },0)
-    // return answer
+    const arr = str.split('').map((e)=> Number(e))
+    let answer =0;
+    arr.map((e, i) => {
+        const num = arr.length-i-1;
+        if(e){
+            answer+= e*(3**num)
+        }
+    })
+    return answer
 }
